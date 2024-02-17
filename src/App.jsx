@@ -45,7 +45,7 @@ function App() {
   // to get PieChart Data
   const getPieChartData = async (m) => {
     let resp = await axios.get(
-      `/pie?month=${m}`
+      `https://roxilerbackend.onrender.com/product/pie?month=${m}`
     );
     setPieData(resp?.data);
   };
